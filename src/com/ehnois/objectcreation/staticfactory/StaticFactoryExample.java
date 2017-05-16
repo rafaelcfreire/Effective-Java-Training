@@ -1,9 +1,14 @@
 package com.ehnois.objectcreation.staticfactory;
 
+/**
+ * 
+ * @author rafaelcfreire
+ *
+ */
 public class StaticFactoryExample {
 
 	/**
-	 * Static instance that is used 
+	 * Static instance that is returned by our static method in case of recurrent calls.
 	 */
 	public static final StaticFactoryExample STATIC_FACTORY_EXAMPLE = new StaticFactoryExample(5);
 	
@@ -25,7 +30,7 @@ public class StaticFactoryExample {
 	 * With this 
 	 * @return
 	 */
-	public static StaticFactoryExample createObjectsWithSize5() {
+	public static StaticFactoryExample getObjectsWithSize5() {
 		return (STATIC_FACTORY_EXAMPLE.factorySize == 5) ? STATIC_FACTORY_EXAMPLE : new StaticFactoryExample(5);
 	}
 }
