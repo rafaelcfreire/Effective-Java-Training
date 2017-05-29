@@ -2,6 +2,9 @@ package com.ehnois.commonobjectmethods.equalshashcodecontract;
 
 /**
  * Item 9: Always override hashCode when you override equals.
+ * In a case that the hashcode is not provided, two identical objects will be stored
+ * in different buckets for HashMaps which will avoid an object to be retrieved.
+ *  
  * @author rafaelcfreire
  *
  */
@@ -36,11 +39,6 @@ public class PhoneNumber {
     return pn.lineNumber == lineNumber
     && pn.prefix  == prefix
     && pn.areaCode  == areaCode;
-  }
-  
-  @Override 
-  public int hashCode() {
-    return 42; 
   }
 
 }
