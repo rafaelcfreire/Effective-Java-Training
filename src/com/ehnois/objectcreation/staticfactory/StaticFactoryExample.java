@@ -1,7 +1,7 @@
 package com.ehnois.objectcreation.staticfactory;
 
 /**
- * 
+ * Item 1: Consider Static Factory Methods Instead of Constructors
  * @author rafaelcfreire
  *
  */

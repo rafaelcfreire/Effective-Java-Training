@@ -1,6 +1,7 @@
 package com.ehnois.objectcreation.singleton;
 
 /**
+ * Item 3: Enforce the Singleton Property with a Private Constructor or an Enum Type.
  * 
  * @author rafaelcfreire
  *
@@ -8,18 +9,18 @@ package com.ehnois.objectcreation.singleton;
 public class Elvis {
  
   /**
-   * 
+   * One way to provide a Singleton instance is using an Enum.
    */
   private static final Elvis INSTANCE = new Elvis();
   
   /**
-   * Private Constructor
+   * Private Constructor to avoid clients to create new instances.
    */
   private Elvis() {
   }
   
   /**
-   * 
+   * The other way to obtain a Singleton instance is providing a static method.
    * @return The Singleton Instance
    */
   public static Elvis getInstance() {
