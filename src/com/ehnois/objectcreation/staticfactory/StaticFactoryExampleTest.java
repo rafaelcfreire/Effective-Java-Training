@@ -9,14 +9,16 @@ public class StaticFactoryExampleTest {
 
   @Test
   public void test() {
+    
+    
     //Comparing the objects created by constructor
     StaticFactoryExample staticFactoryObject = new StaticFactoryExample(5);
     StaticFactoryExample staticFactoryObject2 = new StaticFactoryExample(5);
     assertFalse(staticFactoryObject.equals(staticFactoryObject2));
 
     //Comparing the objects created by static method
-    StaticFactoryExample staticFactoryObject3 = StaticFactoryExample.getObjectsWithSize5();
-    StaticFactoryExample staticFactoryObject4 = StaticFactoryExample.getObjectsWithSize5();
+    StaticFactoryExample staticFactoryObject3 = StaticFactoryExample.getObjectsWithSize5DefaultOrZero();
+    StaticFactoryExample staticFactoryObject4 = StaticFactoryExample.getObjectsWithSize5DefaultOrZero();
     assertTrue(staticFactoryObject3.equals(staticFactoryObject4));
   }
 

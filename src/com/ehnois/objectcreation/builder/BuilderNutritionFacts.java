@@ -1,7 +1,7 @@
 package com.ehnois.objectcreation.builder;
 
 /**
- * Item 2 Consider a Builder When Faced With Many Constructor Parameters.
+ * Item 2: Consider a Builder When Faced With Many Constructor Parameters.
  * 
  * @author rafaelcfreire
  */

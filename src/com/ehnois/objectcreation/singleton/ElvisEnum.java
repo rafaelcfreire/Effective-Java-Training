@@ -7,7 +7,7 @@ package com.ehnois.objectcreation.singleton;
  */
 public enum ElvisEnum {
   /**
-   * 
+   * Enum instance of an Elvis object
    */
   INSTANCE;
   
