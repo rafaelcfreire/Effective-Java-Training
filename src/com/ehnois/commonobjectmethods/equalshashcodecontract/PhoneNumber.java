@@ -28,7 +28,7 @@ public class PhoneNumber {
     if (arg < 0 || arg > max)
       throw new IllegalArgumentException(name +": " + arg);
   }
-  
+
   @Override 
   public boolean equals(Object o) { 
     if (o == this)
@@ -40,7 +40,12 @@ public class PhoneNumber {
     && pn.prefix  == prefix
     && pn.areaCode  == areaCode;
   }
-  
+
+  @Override
+  public int hashCode() {
+    return 51;
+  }
+ 
   
 
 }

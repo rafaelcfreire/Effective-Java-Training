@@ -12,7 +12,7 @@ public class NonSymmetricEqualsTest {
     String nonSymmetricString = "test string";
     assertEquals(nonSymmetricEquals, nonSymmetricString);
     
-    //assertEquals(nonSymmetricString, nonSymmetricEquals);
+    assertEquals(nonSymmetricString, nonSymmetricEquals);
 
   }
 

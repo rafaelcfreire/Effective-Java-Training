@@ -6,15 +6,15 @@ package com.ehnois.commonobjectmethods.tostring;
  * 
  * @author rafaelcfreire
  */
-public class PhoneNumber {
-  private short areaCode;
-  private short prefix;
-  private short lineNumber;
+public class PhoneNumber  {
+  private int areaCode;
+  private int prefix;
+  private int lineNumber;
   private String owner;
   //Attribute that is not relevant to object's representation
   private int age;
   
-  public PhoneNumber(short areaCode, short prefix, short lineNumber, String owner, int age) {
+  public PhoneNumber(int areaCode, int prefix, int lineNumber, String owner, int age) {
     super();
     this.areaCode = areaCode;
     this.prefix = prefix;
@@ -27,6 +27,6 @@ public class PhoneNumber {
   public String toString() {
     return "Area Code: "+areaCode+", Prefix: "+prefix+", Line Number: "+lineNumber+". Owner: "+owner;
   }
-  
+ 
   
 }

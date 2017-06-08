@@ -10,7 +10,7 @@ public class BigDecimalMathTest {
 
   @Test
   public void test() {
-    
+    assertEquals(BigDecimal.valueOf(.61), BigDecimal.valueOf(1.03).subtract(BigDecimal.valueOf(.42)));
   }
 
 }

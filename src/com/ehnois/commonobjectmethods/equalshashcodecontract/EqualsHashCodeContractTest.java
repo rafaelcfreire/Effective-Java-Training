@@ -17,11 +17,13 @@ public class EqualsHashCodeContractTest {
 
   @Test
   public void test() {
-
-    Map<PhoneNumber, String> m = new HashMap<PhoneNumber, String>();
-    m.put(new PhoneNumber(707, 867, 5309), "Jenny");    
+    PhoneNumber phoneNumber = new PhoneNumber(707, 867, 5309);
+    PhoneNumber phoneNumber2 = new PhoneNumber(707, 867, 5310);
     
-    assertNull(m.get(new PhoneNumber(707, 867, 5309)));
+    Map<PhoneNumber, String> m = new HashMap<PhoneNumber, String>();
+    m.put(phoneNumber, "Jenny");    
+    
+    assertNull(m.get(phoneNumber2));
   }
 
 }
